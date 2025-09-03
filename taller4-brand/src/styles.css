@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+
+:root {
+  --color-h2: #ff4900;
+  --color-p: #0093FF;
+  --color-p-nerko: #c500ff;
+  --color-link: #0056b3;
+  --color-fondo: #f6f6f6;
+
+  --font-base: Arial, sans-serif;
+  --font-nerko: 'Nerko One', cursive;
+
+  --font-size-base: 1rem;      
+  --font-size-small: 0.75rem;  
+  --font-size-h2: 2rem;
+
+  --table-border: 1px solid #ccc;
+  --table-header-bg: #f4f4f4;
+}
+
+
+html,body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-fondo);
+  font-family: var(--font-base);
+}
+
+
+
+
+h2 {
+  color: var(--color-h2);
+  font-size: var(--font-size-h2);
+}
+
+
+p {
+  font-size: var(--font-size-base);
+  color: var(--color-p);
+  font-family: var(--font-base);
+}
+
+
+p.nerko {
+  font-size: var(--font-size-small);
+  color: var(--color-p-nerko);
+  font-family: var(--font-nerko);
+}
+
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: var(--table-border);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--table-header-bg);
+}
+
+
+
+ul li a {
+  color: #001bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul li a:visited {
+  color: #4CAF50;
+}
+
+ul li a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+
+.table-custom {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.table-custom th {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-custom td {
+  padding: 8px;
+  font-size: 1.5rem;
+}
+
+
+.table-custom tr.row-gray {
+  background-color: #bec1c3;
+  color: #000000;
+}
+
+
+.table-custom tr.row-blue {
+  background-color: #045795;
+  color: #ffffff;
+}
