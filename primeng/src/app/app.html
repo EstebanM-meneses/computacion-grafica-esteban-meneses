@@ -1,0 +1,46 @@
+<div class="p-4">
+  <h2>Formulario de Registro</h2>
+
+  <div class="field">
+    <label for="nombre">Nombre</label>
+    <input id="nombre" type="text" pInputText placeholder="Ingresa tu nombre" />
+  </div>
+
+  
+  <div class="field">
+    <label for="password">Contraseña</label>
+    <p-password id="password" placeholder="Ingresa tu contraseña" toggleMask="true"></p-password>
+  </div>
+
+
+  <div class="field">
+    <p-checkbox name="terminos" binary="true" inputId="terminos"></p-checkbox>
+    <label for="terminos">Acepto los terminos y condiciones</label>
+  </div>
+
+  
+  <div class="field">
+    <label>Gnero:</label><br />
+    <p-radioButton name="genero" value="masculino" inputId="masc"></p-radioButton>
+    <label for="masc">Masculino</label>
+    <p-radioButton name="genero" value="femenino" inputId="fem"></p-radioButton>
+    <label for="fem">Femenino</label>
+  </div>
+
+
+  <div class="field">
+    <label>Subir foto</label>
+    <p-fileUpload name="foto" accept="image/*" maxFileSize="1000000" chooseLabel="Seleccionar" uploadLabel="Subir" cancelLabel="Cancelar"></p-fileUpload>
+  </div>
+
+ 
+  <p-toast></p-toast>
+
+ 
+  <div class="field mt-3">
+    <button pButton type="button" label="Registrar" icon="pi pi-check"></button>
+  </div>
+</div>
+
+
+<router-outlet />
